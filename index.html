@@ -1,22 +1,137 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <title>John McCloskey</title>
+</head>
+<style>
+  body {
+    background-color: black;
+  }
+
+  a {
+    color: rgb(198, 198, 245);
+  }
+
+  .parallax {
+    /* The image used */
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+
+  .parallax.nyc {
+    background-image: url("assets/ny_wire_thing.jpg");
+  }
+
+  .parallax.christmas_cake {
+    background-image: url("assets/christmas_cake.jpg");
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+  }
+
+  .black_to_white {
+    background-image: linear-gradient(black, transparent);
+  }
+
+  .airplane {
+    background-image: url("assets/airplane.jpg");
+    width: "100%";
+  }
+
+  .wood {
+    background-image: url("assets/dark_wood.jpg");
+    color: white;
+  }
+
+  .stars {
+    background-image: url("assets/stars.jpg");
+    color: white;
+  }
+
+  .textile {
+    background-image: url("assets/black_textile.jpg");
+    color: white;
+  }
+</style>
+
+<body>
+  <!-- div>div#page>p.title+p -->
+  <div class="containter-fluid bg-black text-white">
+    Selected Projects:
+    <button class="btn btn-outline-secondary" type=button href="#jisho"><a href="#jisho">Jisho</a></button>
+    <button class="btn btn-outline-secondary" type=button href="#tf"><a href="#tf">Image Classifier</a></button>
+    <button class="btn btn-outline-secondary" type=button href="#jisho"><a href="#ogd">Feature Extractors</a></button>
+    <button class="btn btn-outline-secondary" type=button href="#jisho"><a href="#about">About</a></button>
+    <button class="btn btn-outline-secondary" type=button href="#jisho"><a
+        href="https://www.linkedin.com/in/john-mccloskey-0ba549158/">Linkedin</a></button>
+    <button class="btn btn-outline-secondary" type=button href="#jisho"><a
+        href="https://github.com/gettodaze">Github</a></button>
+
+
+  </div>
+  <div>
+    <br>
+    <img src="assets/John McCloskey white.svg" alt="John McCloskey" width="100%">
+  </div>
+
+  <div class="parallax textile">
+    <div class="black_to_white">
+      <br>
+    </div>
+    <h1 id='jisho'>Jisho Commandline Tool</h1>
+    Written in python, the code can be found <a href="https://github.com/gettodaze/jisho_ext">here</a>. <br>
+    The project is a bit messy on github. The only important files are the main file <a
+      href="https://github.com/gettodaze/jisho_ext/blob/master/jisho.py">jisho.py</a>
+    and the utils file <a href="https://github.com/gettodaze/jisho_ext/blob/master/utils.py">utils.py</a>.
+  </div>
+
+  <div class="parallax wood">
+    <h1 id='tf'>Tensorflow Japanese Image Classifier</h1>
+    Code for this project can be found <a href="https://github.com/gettodaze/Benefit">here</a>.
+  </div>
+  <div class="parallax stars">
+    <h1 id='ogd'>Game Feature Extractors</h1>
+    Made at Field Day. This code can be found in the Field Day OpenGameData repository <a
+      href="https://github.com/fielddaylab/opengamedata">here</a>. <br>
+    The extractors I built are called <a
+      href="https://github.com/fielddaylab/opengamedata/blob/master/feature_extractors/LakelandExtractor.py">LakelandExtractor.py</a>
+    and <a
+      href="https://github.com/fielddaylab/opengamedata/blob/master/feature_extractors/JowilderExtractor.py">JowilderExtractor.py</a>.
+  </div>
+  <div class="parallax christmas_cake">
+    <h1 id='about'>About Me</h1>
+    <h5>- I love baking.</h5>
+    <h5>- I speak Japanese.</h5>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
