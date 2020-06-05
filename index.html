@@ -1,137 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+  <title>John McCloskey</title>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <title>John McCloskey</title>
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-  body {
-    background-color: black;
-  }
-
-  a {
-    color: rgb(198, 198, 245);
-  }
-
-  .parallax {
-    /* The image used */
-
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-  }
-
-  .parallax.nyc {
-    background-image: url("assets/ny_wire_thing.jpg");
-  }
-
-  .parallax.christmas_cake {
-    background-image: url("assets/christmas_cake.jpg");
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
-    color: white;
-  }
-
-  .black_to_white {
-    background-image: linear-gradient(black, transparent);
-  }
-
-  .airplane {
-    background-image: url("assets/airplane.jpg");
-    width: "100%";
-  }
-
-  .wood {
-    background-image: url("assets/dark_wood.jpg");
-    color: white;
-  }
-
-  .stars {
-    background-image: url("assets/stars.jpg");
-    color: white;
-  }
-
-  .textile {
-    background-image: url("assets/black_textile.jpg");
-    color: white;
-  }
-</style>
 
 <body>
-  <!-- div>div#page>p.title+p -->
-  <div class="containter-fluid bg-black text-white">
-    Selected Projects:
-    <button class="btn btn-outline-secondary" type=button href="#jisho"><a href="#jisho">Jisho</a></button>
-    <button class="btn btn-outline-secondary" type=button href="#tf"><a href="#tf">Image Classifier</a></button>
-    <button class="btn btn-outline-secondary" type=button href="#jisho"><a href="#ogd">Feature Extractors</a></button>
-    <button class="btn btn-outline-secondary" type=button href="#jisho"><a href="#about">About</a></button>
-    <button class="btn btn-outline-secondary" type=button href="#jisho"><a
-        href="https://www.linkedin.com/in/john-mccloskey-0ba549158/">Linkedin</a></button>
-    <button class="btn btn-outline-secondary" type=button href="#jisho"><a
-        href="https://github.com/gettodaze">Github</a></button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">JM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-
-  </div>
-  <div>
-    <br>
-    <img src="assets/John McCloskey white.svg" alt="John McCloskey" width="100%">
-  </div>
-
-  <div class="parallax textile">
-    <div class="black_to_white">
-      <br>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-    <h1 id='jisho'>Jisho Commandline Tool</h1>
-    Written in python, the code can be found <a href="https://github.com/gettodaze/jisho_ext">here</a>. <br>
-    The project is a bit messy on github. The only important files are the main file <a
-      href="https://github.com/gettodaze/jisho_ext/blob/master/jisho.py">jisho.py</a>
-    and the utils file <a href="https://github.com/gettodaze/jisho_ext/blob/master/utils.py">utils.py</a>.
+  </nav>
+  <div class="title" id="header_title">
+    <div class="title_box">
+      <div>
+        <h1>John</h1>
+      </div>
+    </div>
+    <div class="title_box">
+      <div>
+        <svg id="header_photo_frame" viewBox="0 -10 1231 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- pattern -->
+          <defs>
+            <pattern id="image" x="0%" y="0%" height="100%" width="100%" viewBox="0 0 512 512">
+              <image x="0%" y="0%" width="512" height="512" xlink:href="assets/john_otera_bg4.jpg"></image>
+            </pattern>
+          </defs>
+          <circle cx="632" cy="264" r="262.5" fill="url(#image)" />
+          <line class="upperleft" x1="0" y1="221.5" x2="289" y2="221.5" />
+          <line class="upperright" x1="888" y1="221.5" x2="1177" y2="221.5" />
+          <line class="lowerleft" x1="87" y1="303.5" x2="376" y2="303.5" />
+          <line class="lowerright" x1="942" y1="303.5" x2="1231" y2="303.5" />
+        </svg>
+      </div>
+    </div>
+    <div class="title_box">
+      <div>
+        <h1>McCloskey</h1>
+      </div>
+    </div>
   </div>
-
-  <div class="parallax wood">
-    <h1 id='tf'>Tensorflow Japanese Image Classifier</h1>
-    Code for this project can be found <a href="https://github.com/gettodaze/Benefit">here</a>.
+  <hr>
+  <div class="title">
+    <h3>Projects</h3>
   </div>
-  <div class="parallax stars">
-    <h1 id='ogd'>Game Feature Extractors</h1>
-    Made at Field Day. This code can be found in the Field Day OpenGameData repository <a
-      href="https://github.com/fielddaylab/opengamedata">here</a>. <br>
-    The extractors I built are called <a
-      href="https://github.com/fielddaylab/opengamedata/blob/master/feature_extractors/LakelandExtractor.py">LakelandExtractor.py</a>
-    and <a
-      href="https://github.com/fielddaylab/opengamedata/blob/master/feature_extractors/JowilderExtractor.py">JowilderExtractor.py</a>.
+  <div class="cards" id="cards">
   </div>
-  <div class="parallax christmas_cake">
-    <h1 id='about'>About Me</h1>
-    <h5>- I love baking.</h5>
-    <h5>- I speak Japanese.</h5>
-  </div>
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
