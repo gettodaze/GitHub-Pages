@@ -5,6 +5,10 @@ $.getJSON("source.json", function (json) {
         let card = document.createElement("div");
         card.setAttribute("class", "card");
         card.setAttribute("id", projData.id);
+        let id = projData.id;
+        card.onclick = function () {
+            $("#" + id).toggleClass("unlimit_content");
+        }
 
         let img = document.createElement("img");
         img.setAttribute("src", projData.image_src);
@@ -25,10 +29,22 @@ $.getJSON("source.json", function (json) {
         card_content.setAttribute("id", projData.id + "_content");
         card_content.innerHTML = projData.content;
         card.appendChild(card_content);
-        let id = projData.id;
-        card.onclick = function () {
-            $("#" + id).toggleClass("unlimit_content");
+
+        if (projData.btn_link != null) {
+            let btn = document.createElement("input");
+            btn.setAttribute("class", "card_btn");
+            btn.setAttribute("type", "button");
+            btn.setAttribute("value", projData.btn_text);
+            btn.onclick = function () {
+                $("#" + id).toggleClass("unlimit_content");
+                location.href = projData.btn_link;
+            }
+            card.appendChild(btn);
+
         }
+
+
+
 
         cards.appendChild(card);
 

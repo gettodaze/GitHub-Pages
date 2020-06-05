@@ -87,6 +87,12 @@ svg#header_photo_frame circle {
       width: 45%;
     }
   }
+
+  @media (min-width:1000px) {
+    .card {
+      width: 30%;
+    }
+  }
   
   /* On mouse-over, add a deeper shadow */
   .card:hover {
