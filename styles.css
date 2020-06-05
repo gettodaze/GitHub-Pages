@@ -57,7 +57,7 @@ svg#header_photo_frame circle {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
   }
 

@@ -35,9 +35,10 @@ $.getJSON("source.json", function (json) {
             btn.setAttribute("class", "card_btn");
             btn.setAttribute("type", "button");
             btn.setAttribute("value", projData.btn_text);
+            let btn_link = projData.btn_link;
             btn.onclick = function () {
                 $("#" + id).toggleClass("unlimit_content");
-                location.href = projData.btn_link;
+                location.href = btn_link;
             }
             card.appendChild(btn);
 

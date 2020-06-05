@@ -6,25 +6,43 @@
             "image_src": "assets/christmas_cake.jpg",
             "image_alt": "A christmas cake.",
             "content": "I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan. I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan. I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan. I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan.",
-            "btn_link": "https://google.com",
+            "btn_link": null,
             "btn_text": "Go to Google"
         },
         {
-            "id": "baking_at_christmas2",
-            "title": "Baking at christmas2.",
-            "image_src": "garbage",
+            "id": "jisho_cmd",
+            "title": "Jisho Commandline Tool",
+            "image_src": "",
             "image_alt": "A christmas cake.",
-            "content": "I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan. I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan. I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan. I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan.",
-            "btn_link": "https://google.com",
-            "btn_text": "Go to Google"
+            "content": " Written in python, the code can be found <a href=\"https://github.com/gettodaze/jisho_ext\">here</a>. <br /> The project is a bit messy on github. The only important files are the main file <a href=\"https://github.com/gettodaze/jisho_ext/blob/master/jisho.py\"   >jisho.py</a > and the utils file <a href=\"https://github.com/gettodaze/jisho_ext/blob/master/utils.py\"   >utils.py</a >.",
+            "btn_link": "https://github.com/gettodaze/jisho_ext",
+            "btn_text": "Repo"
         },
         {
-            "id": "baking_at_christmas3",
-            "title": "Baking at christmas3.",
+            "id": "fd_feature_extractors",
+            "title": "Game Feature Extractors",
             "image_src": "garbage",
             "image_alt": "A christmas cake.",
-            "content": "I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan. I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan. I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan. I really enjoy baking. So I made this cake. It's fat free. And reminds me of Japan.",
-            "btn_link": "https://google.com",
+            "content": "Made at Field Day. This code can be found in the Field Day OpenGameData repository       The extractors I built are called <a href=\"https://github.com/fielddaylab/opengamedata/blob/master/feature_extractors/LakelandExtractor.py\"> LakelandExtractor.py</a> and <a href=\"https://github.com/fielddaylab/opengamedata/blob/master/feature_extractors/JowilderExtractor.py\">JowilderExtractor.py</a>.",
+            "btn_link": "https://github.com/fielddaylab/opengamedata",
+            "btn_text": "Github Repo"
+        },
+        {
+            "id": "tf_jp_img_clf",
+            "title": "Tensorflow Japanese Image Classifier",
+            "image_src": "garbage",
+            "image_alt": "A christmas cake.",
+            "content": "Code for this project can be found <a href=\"https://github.com/gettodaze/Benefit\">here</a>.",
+            "btn_link": "https://github.com/gettodaze/Benefit",
+            "btn_text": "Github Repo"
+        },
+        {
+            "id": "aboutme",
+            "title": "About Me",
+            "image_src": "garbage",
+            "image_alt": "A christmas cake.",
+            "content": "I love baking. I speak Japanese.",
+            "btn_link": null,
             "btn_text": "Go to Google"
         }
     ]
