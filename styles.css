@@ -138,3 +138,16 @@ svg#header_photo_frame circle {
     height: fit-content;
     overflow: visible;
   }
+
+hr {
+  border: 1px solid black;
+}
+
+div.byline {
+  font-style:italic;
+}
+
+div.contact {
+  margin-left: 10px;
+  margin-right: 10px;
+}
