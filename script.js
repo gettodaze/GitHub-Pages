@@ -1,5 +1,7 @@
 var blog_cards = document.getElementById("blog_cards");
 var project_cards = document.getElementById("project_cards");
+var content_boxes = document.querySelectorAll('.content_box');
+
 $.getJSON("source.json", function (json) {
     console.log(json); // this will show the info it in firebug console
     for (projData of json.projects) {
@@ -60,3 +62,19 @@ function get_card(dataObj) {
 
     return card;
 }
+
+document.body.addEventListener("scroll", function (event) {
+    for (let i = 0; i < content_boxes.length; i++) {
+        let cb = content_boxes[i];
+        let nav_item = document.getElementByClassName("nav-item")[i]
+        let cb_yTop = cb.offsetTop;
+        let cb_yBot = cb_yTop + cb.scrollHeight;
+        if (window.ScrollY > cb_yTop && window.ScrollY < cb_yBot) {
+            nav_item.style.borderBottom = "2px solid #2cafe4";
+        }
+        else {
+            nav_item.style.borderBottom = "0px";
+        }
+    }
+    window.scrollY
+})

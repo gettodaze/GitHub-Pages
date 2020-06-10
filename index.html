@@ -14,182 +14,170 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">JM</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  <div class="title" id="header_title">
-    <div class="title_box">
-      <div>
-        <h1>John</h1>
-      </div>
-    </div>
-    <div class="title_box">
-      <div>
-        <svg id="header_photo_frame" viewBox="0 -10 1231 540" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- pattern -->
-          <defs>
-            <pattern id="image" x="0%" y="0%" height="100%" width="100%" viewBox="0 0 512 512">
-              <image x="0%" y="0%" width="512" height="512" xlink:href="assets/john_otera_bg4.jpg"></image>
-            </pattern>
-          </defs>
-          <circle cx="632" cy="264" r="262.5" fill="url(#image)" />
-          <line class="upperleft" x1="0" y1="221.5" x2="289" y2="221.5" />
-          <line class="upperright" x1="888" y1="221.5" x2="1177" y2="221.5" />
-          <line class="lowerleft" x1="87" y1="303.5" x2="376" y2="303.5" />
-          <line class="lowerright" x1="942" y1="303.5" x2="1231" y2="303.5" />
-        </svg>
-      </div>
-    </div>
-    <div class="title_box">
-      <div>
-        <h1>McCloskey</h1>
-      </div>
-    </div>
-  </div>
-  <div class="title byline">
-    This is my byline.
-  </div>
-  <hr>
-  <div class="title">
-    <h3>Projects</h3>
-  </div>
-  <div class="cards" id="project_cards">
-  </div>
-  <hr>
-  <div class="title">
-    <h3>Resume</h3>
-  </div>
-  <hr>
-  <div class="title">
-    <h3>Blog</h3>
-  </div>
-  <div class="cards" id="blog_cards">
-  </div>
-  <hr>
-  <div class="title">
-    <h3>Contact</h3>
-  </div>
-  <div class="contact">
-    <div class="title">Do you have any questions? Please do not hesitate to contact me
-      directly. This form is powered by Formspree. </div>
-    <br>
-
-    <div class="row">
-
-      <!--Grid column-->
-      <div class="col-md-9 mb-md-0 mb-5">
-        <form id="contact-form" name="contact-form" action="http://formspree.io/john.gaoxing@gmail.com" method="POST">
-
-          <!--Grid row-->
-          <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-6">
-              <div class="md-form mb-0">
-                <input type="text" id="name" name="name" class="form-control">
-                <label for="name" class="">Your name</label>
-              </div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6">
-              <div class="md-form mb-0">
-                <input type="text" id="email" name="_replyto" class="form-control">
-                <label for="email" class="">Your email</label>
-              </div>
-            </div>
-            <!--Grid column-->
-
-          </div>
-          <!--Grid row-->
-
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-md-12">
-              <div class="md-form mb-0">
-                <input type="text" id="subject" name="subject" class="form-control">
-                <label for="subject" class="">Subject</label>
-              </div>
-            </div>
-          </div>
-          <!--Grid row-->
-
-          <!--Grid row-->
-          <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-12">
-
-              <div class="md-form">
-                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                <label for="message">Your message</label>
-              </div>
-
-            </div>
-          </div>
-          <!--Grid row-->
-
-        </form>
-
-        <div class="text-center text-md-left">
-          <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#resume">Resume</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
+  <div id="page_content">
+    <div class="content_box parallax" id='header_content_box'>
+      <div class="title" id="header_title">
+        <div class="title_box">
+          <h1>John</h1>
         </div>
-        <div class="status"></div>
+        <div class="title_box" style="flex-grow: 2;">
+          <svg id="header_photo_frame" viewBox="0 -10 1231 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- pattern -->
+            <defs>
+              <pattern id="image" x="0%" y="0%" height="100%" width="100%" viewBox="0 0 512 512">
+                <image x="0%" y="0%" width="512" height="512" xlink:href="assets/john_otera_bg6.jpg"></image>
+              </pattern>
+            </defs>
+            <circle cx="632" cy="264" r="262.5" fill="url(#image)" />
+            <line class="upperleft" x1="0" y1="221.5" x2="289" y2="221.5" />
+            <line class="upperright" x1="888" y1="221.5" x2="1177" y2="221.5" />
+            <line class="lowerleft" x1="87" y1="303.5" x2="376" y2="303.5" />
+            <line class="lowerright" x1="942" y1="303.5" x2="1231" y2="303.5" />
+          </svg>
+        </div>
+        <div class="title_box">
+          <h1>McCloskey</h1>
+        </div>
       </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-3 text-center">
-        <ul class="list-unstyled mb-0">
-          <li><img src="assets/location.svg" alt="" width="30" />
-            <p>Madison, WI 53703, USA</p>
-          </li>
-
-          <li><img src="assets/telephone.svg" alt="" width="30" />
-            <p>+ 01 262 794 2049</p>
-          </li>
-
-          <li><img src="assets/mail.svg" alt="" width="50" />
-            <p>jmccloskey2@wisc.edu</p>
-          </li>
-        </ul>
+      <div class="title byline">
+        This is my byline.
       </div>
-      <!--Grid column-->
+    </div>
+    <div class="content_box parallax" id='projects_content_box'>
+      <a name='projects'></a>
+      <div class="title">
+        <h3>Projects</h3>
+      </div>
+      <div class="cards" id="project_cards">
+      </div>
+    </div>
+    <div class="content_box parallax" id='resume_content_box'>
+      <a name='resume'></a>
+
+      <div class="title">
+        <h3>Resume</h3>
+      </div>
+    </div>
+    <div class="content_box parallax" id='blog_content_box'>
+      <a name='blog'></a>
+
+      <div class="title">
+        <h3>Blog</h3>
+      </div>
+      <div class="cards" id="blog_cards">
+      </div>
+    </div>
+    <div class="content_box parallax" id='contact_content_box'>
+      <a name='contact'></a>
+
+      <div class="title">
+        <h3>Contact</h3>
+      </div>
+      <div class="contact">
+        <div class="title">Do you have any questions? Please do not hesitate to contact me
+          directly. This form is powered by Formspree. </div>
+        <br>
+
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="https://formspree.io/john.gaoxing@gmail.com"
+              method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="name" name="name" class="form-control">
+                    <label for="name" class="">Your name</label>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="email" name="_replyto" class="form-control">
+                    <label for="email" class="">Your email</label>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input type="text" id="subject" name="subject" class="form-control">
+                    <label for="subject" class="">Subject</label>
+                  </div>
+                </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                  <div class="md-form">
+                    <textarea type="text" id="message" name="message" rows="2"
+                      class="form-control md-textarea"></textarea>
+                    <label for="message">Your message</label>
+                  </div>
+
+                </div>
+              </div>
+              <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li><img src="assets/location.svg" alt="" width="30" />
+                <p>Madison, WI 53703, USA</p>
+              </li>
+
+              <li><img src="assets/telephone.svg" alt="" width="30" />
+                <p>+ 01 262 794 2049</p>
+              </li>
+
+              <li><img src="assets/mail.svg" alt="" width="50" />
+                <p>jmccloskey2@wisc.edu</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+      </div>
     </div>
   </div>
   <!-- Optional JavaScript -->

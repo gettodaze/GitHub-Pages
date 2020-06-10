@@ -5,8 +5,8 @@ body {
 
 svg#header_photo_frame{
     stroke-width: 10;
-    stroke: black;
-    width: max-content;
+    stroke: white;
+    width: 70%;
 }
 svg#header_photo_frame circle {
     stroke-dasharray: 2000;
@@ -81,10 +81,20 @@ svg#header_photo_frame circle {
     #header_title {
       flex-direction: column;
     }
+    .content_box > div {
+      margin-right: 0%;
+      margin-left: 0%;
+    }
   }
   @media (min-width:600px) {
     .card {
       width: 45%;
+    }
+    #projects_content_box > div {
+      margin-left: 20%;
+    }
+    #blog_content_box > div {
+      margin-right: 20%;
     }
   }
 
@@ -109,6 +119,8 @@ svg#header_photo_frame circle {
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px;
+    align-items: center;
+    height: fit-content;
   }
 
   .title_box {
@@ -116,9 +128,14 @@ svg#header_photo_frame circle {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
+    flex-grow: 1;
+    text-align: center;
   }
   .title_box > div {
     text-align: center;
+    height: fit-content;
+    width: fit-content;
   }
 
   .card_title {
@@ -150,4 +167,57 @@ div.byline {
 div.contact {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.content_box {
+  border-top:2px solid white; 
+  border-bottom: 2px solid white;
+  background-color: gray;
+}
+
+#header_content_box {
+  background-image: url(assets/airplane.jpg);
+  background-size: 100%;
+  background-position: center top;
+  color: rgb(68, 68, 68);
+}
+
+.parallax {
+  /* The image used */
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  color: black;
+}
+
+#header_content_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav{
+  background-color: #C9D8F7;
+
+}
+
+#projects_content_box {
+  background-image: url(assets/black_textile.jpg);
+
+}
+
+#blog_content_box {
+  background-image: url(assets/capitol.jpg);
+}
+
+
+
+.nav-link {
+  color:black;
 }
