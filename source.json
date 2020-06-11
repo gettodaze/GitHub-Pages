@@ -22,8 +22,35 @@
             "id": "tf_jp_img_clf",
             "title": "Tensorflow Japanese Image Classifier",
             "image_src": "assets/tensorflow.png",
-            "image_alt": "A christmas cake.",
+            "image_alt": "Tensorflow Logo",
             "content": "Code for this project can be found <a href=\"https://github.com/gettodaze/Benefit\">here</a>.",
+            "btn_link": "https://github.com/gettodaze/Benefit",
+            "btn_text": "Github Repo"
+        },
+        {
+            "id": "jisho_app",
+            "title": "Jisho App",
+            "image_src": "assets/jisho_app_thumb.jpg",
+            "image_alt": "A christmas cake.",
+            "content": "The commandline tool (above) is nice, but is only ever usable from the commandline, which on windows doesn't even support Japanese characters very well. So I decided to port the functionality into an app! The app is still in progress but is written in Java and uses the  Model-View-Viewmodel along with a room database.",
+            "btn_link": "https://github.com/gettodaze/jisho",
+            "btn_text": "Github Repo"
+        },
+        {
+            "id": "ats",
+            "title": "Active Transcription Overlap Detector",
+            "image_src": "assets/ats_poster.jpg",
+            "image_alt": "A christmas cake.",
+            "content": "As an undergraduate persuing medical school, I originally worked in a biochemistry lab. After I decided to persue coding more heavily, I tried to transition from wet-lab experiments to more computational methods. One of those tasks was to adapt a Computer Vision matlab script from detecting Active Transcription Sites (ATS) to distinguishing between two flavors of ATS, complete ATS and incomplete ATS. I was able to present preliminary findings at the national ASBMB conference (pictured above). The paper has just recently been sent for publication.",
+            "btn_link": "#",
+            "btn_text": "Not yet published"
+        },
+        {
+            "id": "this_site",
+            "title": "This Website",
+            "image_src": "assets/site_thumb.jpg",
+            "image_alt": "A christmas cake.",
+            "content": "This website isn't much, is written with simple HTML, bootstrap and flexbox CSS, a JSON file containing card data, and a javascript file to load the JSON.",
             "btn_link": "https://github.com/gettodaze/Benefit",
             "btn_text": "Github Repo"
         }
@@ -43,7 +70,7 @@
             "title": "About Me",
             "image_src": "assets/john_otera_bg6.jpg",
             "image_alt": "A christmas cake.",
-            "content": "I love baking. I speak Japanese.",
+            "content": "Originally I went to college to get a degree in biochemistry, but found I enjoyed computer science a lot more. I made the decision to focus on C.S. too late in my path to switch fully, and ultimately came out with a degree in Japanese with certificates in both computer science and biology. <br> <br>I love baking. I speak Japanese.",
             "btn_link": null,
             "btn_text": "Go to Google"
         }
