@@ -3,7 +3,7 @@
         {
             "id": "jisho_cmd",
             "title": "Jisho Commandline Tool",
-            "image_src": "",
+            "image_src": "assets/jishocmd.jpg",
             "image_alt": "A christmas cake.",
             "content": " Written in python, the code can be found <a href=\"https://github.com/gettodaze/jisho_ext\">here</a>. <br /> The project is a bit messy on github. The only important files are the main file <a href=\"https://github.com/gettodaze/jisho_ext/blob/master/jisho.py\"   >jisho.py</a > and the utils file <a href=\"https://github.com/gettodaze/jisho_ext/blob/master/utils.py\"   >utils.py</a >.",
             "btn_link": "https://github.com/gettodaze/jisho_ext",
@@ -12,7 +12,7 @@
         {
             "id": "fd_feature_extractors",
             "title": "Game Feature Extractors",
-            "image_src": "garbage",
+            "image_src": "assets/jowilder_ogd.jpg",
             "image_alt": "A christmas cake.",
             "content": "Made at Field Day. This code can be found in the Field Day OpenGameData repository       The extractors I built are called <a href=\"https://github.com/fielddaylab/opengamedata/blob/master/feature_extractors/LakelandExtractor.py\"> LakelandExtractor.py</a> and <a href=\"https://github.com/fielddaylab/opengamedata/blob/master/feature_extractors/JowilderExtractor.py\">JowilderExtractor.py</a>.",
             "btn_link": "https://github.com/fielddaylab/opengamedata",
@@ -21,7 +21,7 @@
         {
             "id": "tf_jp_img_clf",
             "title": "Tensorflow Japanese Image Classifier",
-            "image_src": "garbage",
+            "image_src": "assets/tensorflow.png",
             "image_alt": "A christmas cake.",
             "content": "Code for this project can be found <a href=\"https://github.com/gettodaze/Benefit\">here</a>.",
             "btn_link": "https://github.com/gettodaze/Benefit",
@@ -41,7 +41,7 @@
         {
             "id": "aboutme",
             "title": "About Me",
-            "image_src": "garbage",
+            "image_src": "assets/john_otera_bg6.jpg",
             "image_alt": "A christmas cake.",
             "content": "I love baking. I speak Japanese.",
             "btn_link": null,

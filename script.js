@@ -26,6 +26,11 @@ function get_card(dataObj) {
         $("#" + id).toggleClass("unlimit_content");
     }
 
+    let card_title = document.createElement("p");
+    card_title.setAttribute("class", "card_title");
+    card_title.innerHTML = dataObj.title;
+    card.appendChild(card_title);
+
     let img = document.createElement("img");
     img.setAttribute("src", dataObj.image_src);
     img.setAttribute("alt", dataObj.image_alt);
@@ -35,11 +40,6 @@ function get_card(dataObj) {
     container.setAttribute("class", "container");
     card.appendChild(container);
 
-    let card_title = document.createElement("p");
-    card_title.setAttribute("class", "card_title");
-    card_title.innerHTML = dataObj.title;
-    card.appendChild(card_title);
-
     let card_content = document.createElement("p");
     card_content.setAttribute("class", "card_content");
     card_content.setAttribute("id", dataObj.id + "_content");
@@ -48,7 +48,7 @@ function get_card(dataObj) {
 
     if (dataObj.btn_link != null) {
         let btn = document.createElement("input");
-        btn.setAttribute("class", "card_btn");
+        btn.setAttribute("class", "card_btn btn-dark");
         btn.setAttribute("type", "button");
         btn.setAttribute("value", dataObj.btn_text);
         let btn_link = dataObj.btn_link;

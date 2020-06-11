@@ -152,6 +152,10 @@ svg#header_photo_frame circle {
     margin-right: 5px;
   }
 
+  .card_btn {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .unlimit_content {
     height: fit-content;
     overflow: visible;
